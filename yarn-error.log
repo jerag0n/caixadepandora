@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js dev
 
 PATH: 
   C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;;C:\Users\pati\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pati\AppData\Roaming\npm;C:\Users\pati\AppData\Local\Yarn\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: C:\Users\pati\caixadepandora\package.json: Unexpected token / in JSON at position 458
+  SyntaxError: C:\Users\pati\caixadepandora\package.json: Unexpected token { in JSON at position 455
       at JSON.parse (<anonymous>)
       at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -41,10 +41,8 @@ npm manifest:
       "sucrase": "^3.10.1"
   
     }
-    
-    //{"script":{"dev":"nodemon src/server.js", "build":"sucrase ./src -d ./dist —transforms
-    //  imports”, start:node list/server.js}
-          
+    {"scripts":{"dev":"nodemon src/server.js", "build":"sucrase ./src -d ./dist —transformsimports",  "start":"node list/server.js" }
+             
     
   }
 

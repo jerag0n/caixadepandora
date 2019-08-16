@@ -16,9 +16,8 @@
     "nodemon": "^1.19.1",
     "sucrase": "^3.10.1"
 
-  }
-  {"scripts":{"dev":"nodemon src/server.js", "build":"sucrase ./src -d ./dist —transforms
-    imports” 'start':'node list/server.js' }
+  },
+  "scripts":{"dev":"nodemon src/server.js", "build":"sucrase ./src -d ./dist —transformsimports",  "start":"node list/server.js"}
            
   
 }
